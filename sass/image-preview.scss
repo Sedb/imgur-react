@@ -1,0 +1,43 @@
+.image-preview{
+  height: 200px;
+  overflow: hidden;
+
+  animation: fadein .7s ease-out;
+
+  @keyframes fadein{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1.0;
+    }
+  }
+
+  .inset{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    opacity: .7;
+  }
+  .glyphicon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    opacity: .5;
+    color: white;
+  }
+  img{
+    max-width: none;
+  }
+  video{
+    max-height: 100%;
+    max-width: 100%;
+    vertical-align: middle;
+    background-color: black;
+  }
+}
