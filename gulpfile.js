@@ -30,6 +30,7 @@ var notify = function(error) {
   }
 
   notifier.notify({title: title, message: message});
+  gutil.log(gutil.colors.red('Error (' + title + '): ' + message));
 };
 
 var bundler = watchify(browserify({
