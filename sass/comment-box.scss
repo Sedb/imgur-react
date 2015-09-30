@@ -1,0 +1,19 @@
+.comment-box{
+  .children{
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .section{
+    display: none;
+  }
+  .section-open{
+    animation: fadein .7s ease-out;
+    display: normal;
+  }
+  .list-group-item{
+    cursor: pointer;
+  }
+  .glyphicon{
+    padding-left: 5px;
+  }
+}
